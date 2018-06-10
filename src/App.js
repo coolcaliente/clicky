@@ -1,35 +1,61 @@
 import React, { Component } from 'react';
+import Wrapper from "./components/Wrapper";
 import Nav from "./components/Nav";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import ArrestedDevelopmentCard from "./components/ArrestedDevelopmentCard";
+import Footer from "./components/Footer";
+import cards from "./cards.json";
 import './App.css';
 
-// class App extends Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         <header className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <h1 className="App-title">Welcome to React</h1>
-//         </header>
-//         <p className="App-intro">
-//           To get started, edit <code>src/App.js</code> and save to reload.
-//         </p>
-//       </div>
-//     );
-//   }
-// }
 
-const App = () => (
-  <Nav />
+// const App = () => (
+//   <Wrapper>
+//     <Nav />
 
-  // <Header />
+//     <Header />
 
-  // <Main>
+//     <Main>
 
-  //   <ArrestedDevelopmentCard />
+//       <ArrestedDevelopmentCard />
 
-  
-  // </ Main>
+    
+//     </ Main> 
+//   </Wrapper>
 
-);
+// );
+
+class App extends Component {
+  state = {
+    cards
+  };
+
+  handleIncrement = id => {
+    // this.setState({ count: this.state.count + 1 });
+    // Make a copy of the cards array to work with
+    // const cards = this.state.cards;
+
+    //filter for any cli
+  };
+
+  render() {
+    return(
+      <Wrapper>
+        <Nav />
+        <Header />
+        <Main> 
+          {this.state.cards.map(card => (
+            <ArrestedDevelopmentCard
+              id={card.id}
+              key={card.id}
+              image={card.image}
+              />
+          ))}
+        </ Main>
+        <Footer />
+      </Wrapper>
+    );
+  }
+}
 
 export default App;

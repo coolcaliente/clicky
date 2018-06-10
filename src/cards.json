@@ -1,50 +1,74 @@
 [
     {
         "id": 1,
-        "image": "../public/assets/images/arresteddevelopment-one.jpg"
+        "name": "Arrested Development family",
+        "image": "./assets/images/arresteddevelopment-one.jpg",
+        "clicked": false
     },
     {
         "id": 2,
-        "image": "../public/assets/images/arresteddevelopment-two.jpg"
+        "name": "Michael Bluth",
+        "image": "./assets/images/arresteddevelopment-two.jpg",
+        "clicked": false
     },
     {
         "id": 3,
-        "image": "../public/assets/images/arresteddevelopment-three.jpg"
+        "name": "Winky Lucille Bluth",
+        "image": "./assets/images/arresteddevelopment-three.jpg",
+        "clicked": false
     },
     {
         "id": 4,
-        "image": "../public/assets/images/arresteddevelopment-four.jpg"
+        "name": "Slut shirt Lindsey Bluth",
+        "image": "./assets/images/arresteddevelopment-thirteen.jpg",
+        "clicked": false
     },
     {
         "id": 5,
-        "image": "../public/assets/images/arresteddevelopment-five.jpg"
+        "name": "Frozen Banana Stand",
+        "image": "./assets/images/arresteddevelopment-five.jpg",
+        "clicked": false
     },
     {
         "id": 6,
-        "image": "../public/assets/images/arresteddevelopment-six.jpg"
+        "name": "Buster Bluth's Goat Friend",
+        "image": "./assets/images/arresteddevelopment-six.jpg",
+        "clicked": false
     },
     {
         "id": 7,
-        "image": "../public/assets/images/arresteddevelopment-seven.jpg"
+        "name": "Buster Stole",
+        "image": "./assets/images/arresteddevelopment-seven.jpg",
+        "clicked": false
     },
     {
         "id": 8,
-        "image": "../public/assets/images/arresteddevelopment-eight.jpg"
+        "name": "Tobias Blue Himself",
+        "image": "./assets/images/arresteddevelopment-eight.jpg",
+        "clicked": false
     },
     {
         "id": 9,
-        "image": "../public/assets/images/arresteddevelopment-nine.jpg"
+        "name": "George Michael in the Adam suit",
+        "image": "./assets/images/arresteddevelopment-nine.jpg",
+        "clicked": false
     },
     {
         "id": 10,
-        "image": "../public/assets/images/arresteddevelopment-eleven.jpg"
+        "name": "Tobias nevernude at the Doctor's office",
+        "image": "./assets/images/arresteddevelopment-ten.jpg",
+        "clicked": false
     },
     {
         "id": 11,
-        "image": "../public/assets/images/arresteddevelopment-eleven.jpg"
+        "name": "GOB doing magic",
+        "image": "./assets/images/arresteddevelopment-eleven.jpg",
+        "clicked": false
     },
     {
         "id": 12,
-        "image": "../public/assets/images/arresteddevelopment-twelve.jpg"
+        "name": "GOB and during a series of dares",
+        "image": "./assets/images/arresteddevelopment-twelve.jpg",
+        "clicked": false
     }
 ]
