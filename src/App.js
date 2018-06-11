@@ -33,7 +33,7 @@ class App extends Component {
   };
 
   handleIncrement = id => {
-    console.log();
+    console.log("you clicked");
     // this.setState({ count: this.state.count + 1 });
 
 
