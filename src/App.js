@@ -25,17 +25,18 @@ import './App.css';
 
 // );
 
+
 class App extends Component {
   state = {
-    cards
+    cards,
+    count: 0
   };
 
   handleIncrement = id => {
+    console.log();
     // this.setState({ count: this.state.count + 1 });
-    // Make a copy of the cards array to work with
-    // const cards = this.state.cards;
 
-    //filter for any cli
+
   };
 
   render() {
