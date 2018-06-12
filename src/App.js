@@ -26,17 +26,34 @@ import './App.css';
 // );
 
 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]]; // eslint-disable-line no-param-reassign
+  }
+  return array;
+};
+
+
 class App extends Component {
   state = {
     cards,
-    count: 0
+    display: shuffleArray(cards)
   };
+
+
 
   handleIncrement = id => {
     console.log("you clicked");
+    this.handleShuffle();
+  
     // this.setState({ count: this.state.count + 1 });
 
+  };
 
+  handleShuffle = () => {
+    let newShuffledArray = shuffleArray(cards);
+    this.setState({ cards: newShuffledArray });
   };
 
   render() {
@@ -50,6 +67,7 @@ class App extends Component {
               id={card.id}
               key={card.id}
               image={card.image}
+              handleIncrement={this.handleIncrement.bind(this)}
               />
           ))}
         </ Main>
