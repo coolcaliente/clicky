@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Arrested Development family",
+        "image": "./assets/images/arresteddevelopment-one.jpg",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "name": "Michael Bluth",
+        "image": "./assets/images/arresteddevelopment-two.jpg",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "name": "Winky Lucille Bluth",
+        "image": "./assets/images/arresteddevelopment-three.jpg",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "name": "Slut shirt Lindsey Bluth",
+        "image": "./assets/images/arresteddevelopment-thirteen.jpg",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "name": "Frozen Banana Stand",
+        "image": "./assets/images/arresteddevelopment-five.jpg",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "name": "Buster Bluth's Goat Friend",
+        "image": "./assets/images/arresteddevelopment-six.jpg",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "name": "Buster Stole",
+        "image": "./assets/images/arresteddevelopment-seven.jpg",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "name": "Tobias Blue Himself",
+        "image": "./assets/images/arresteddevelopment-eight.jpg",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "name": "George Michael in the Adam suit",
+        "image": "./assets/images/arresteddevelopment-nine.jpg",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "name": "Tobias nevernude at the Doctor's office",
+        "image": "./assets/images/arresteddevelopment-ten.jpg",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "name": "GOB doing magic",
+        "image": "./assets/images/arresteddevelopment-eleven.jpg",
+        "clicked": false
+    },
+    {
+        "id": 12,
+        "name": "GOB and during a series of dares",
+        "image": "./assets/images/arresteddevelopment-twelve.jpg",
+        "clicked": false
+    }
+]
