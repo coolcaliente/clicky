@@ -19,7 +19,7 @@ import './App.css';
 
 //       <ArrestedDevelopmentCard />
 
-    
+
 //     </ Main> 
 //   </Wrapper>
 
@@ -28,27 +28,45 @@ import './App.css';
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]]; // eslint-disable-line no-param-reassign
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]]; // eslint-disable-line no-param-reassign
   }
   return array;
 };
+
+function isInArray(value, array) {
+  return array.indexOf(value) > -1;
+}
 
 
 class App extends Component {
   state = {
     cards,
-    display: shuffleArray(cards)
+    score: 0,
+    topScore: 0,
+    message: "Click any picture to play",
+    display: shuffleArray(cards),
+    clickedPic: []
   };
 
 
 
   handleIncrement = id => {
-    console.log("you clicked");
-    this.handleShuffle();
-  
-    // this.setState({ count: this.state.count + 1 });
 
+    if (isInArray(id, this.state.clickedPic)) {
+      this.state.message = "You guessed incorrectly!";
+      if (this.state.score > this.state.topScore) {
+        this.state.topScore = this.state.score;
+      }
+      this.state.score = 0;
+
+    } else {
+      this.state.clickedPic.push(id);
+      console.log(this.state.clickedPic);
+      this.state.score++;
+      this.state.message = "You guessed correct!";
+    }
+    this.handleShuffle();
   };
 
   handleShuffle = () => {
@@ -57,18 +75,22 @@ class App extends Component {
   };
 
   render() {
-    return(
+    return (
       <Wrapper>
-        <Nav />
+        <Nav
+          message={this.state.message}
+          score={this.state.score}
+          topScore={this.state.topScore}
+        />
         <Header />
-        <Main> 
+        <Main>
           {this.state.cards.map(card => (
             <ArrestedDevelopmentCard
               id={card.id}
               key={card.id}
               image={card.image}
               handleIncrement={this.handleIncrement.bind(this)}
-              />
+            />
           ))}
         </ Main>
         <Footer />

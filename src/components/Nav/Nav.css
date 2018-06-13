@@ -1,0 +1,18 @@
+.adLogo {
+    width: 50%;
+    padding-right: 15px;
+}
+
+.messagetext {
+    color:#f47121;
+    font-weight: 700;
+    font-size: 1.15em;
+}
+
+nav {
+
+    -webkit-box-shadow: 0px 9px 42px -16px rgba(0,0,0,0.69);
+    -moz-box-shadow: 0px 9px 42px -16px rgba(0,0,0,0.69);
+    box-shadow: 0px 9px 42px -16px rgba(0,0,0,0.69);
+
+}

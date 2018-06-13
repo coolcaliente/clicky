@@ -1,0 +1,12 @@
+.uppercase {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.jumbotron {
+    background-color: #f47121;
+}
+
+.lead {
+    color: #fff;
+}
