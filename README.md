@@ -1,8 +1,8 @@
 # The Arrested Development Memory Clicky Game
 A React memory game for all those Arrested Development Fans out there.
 
-Play it here:
-https://coolcaliente.github.io/clicky/
+**Play it here:
+https://coolcaliente.github.io/clicky/**
 
 ## Instructions
 
